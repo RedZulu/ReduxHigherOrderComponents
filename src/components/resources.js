@@ -1,6 +1,8 @@
 import React from 'react';
+import requireAuth from './require_authentication';
 
-export default () => {
+
+const Resources = () => {
   return (
     <div>
       Super Special Secret Recipe
@@ -12,3 +14,5 @@ export default () => {
     </div>
   );
 }
+
+export default requireAuth(Resources);
